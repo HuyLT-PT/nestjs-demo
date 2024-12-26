@@ -45,6 +45,69 @@
       "compilerOptions": {
         "tsConfigPath": "apps/schedule-service/tsconfig.app.json"
       }
+    },
+    "authen-provider": {
+      "type": "library",
+      "root": "libs/authen-provider",
+      "entryFile": "index",
+      "sourceRoot": "libs/authen-provider/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/authen-provider/tsconfig.lib.json"
+      }
+    },
+    "cache-provider": {
+      "type": "library",
+      "root": "libs/cache-provider",
+      "entryFile": "index",
+      "sourceRoot": "libs/cache-provider/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/cache-provider/tsconfig.lib.json"
+      }
+    },
+    "notification-provider": {
+      "type": "library",
+      "root": "libs/notification-provider",
+      "entryFile": "index",
+      "sourceRoot": "libs/notification-provider/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/notification-provider/tsconfig.lib.json"
+      }
+    },
+    "sql-provider": {
+      "type": "library",
+      "root": "libs/sql-provider",
+      "entryFile": "index",
+      "sourceRoot": "libs/sql-provider/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/sql-provider/tsconfig.lib.json"
+      }
+    },
+    "logging-provider": {
+      "type": "library",
+      "root": "libs/logging-provider",
+      "entryFile": "index",
+      "sourceRoot": "libs/logging-provider/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/logging-provider/tsconfig.lib.json"
+      }
+    },
+    "common-provider": {
+      "type": "library",
+      "root": "libs/common-provider",
+      "entryFile": "index",
+      "sourceRoot": "libs/common-provider/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/common-provider/tsconfig.lib.json"
+      }
+    },
+    "config-provider": {
+      "type": "library",
+      "root": "libs/config-provider",
+      "entryFile": "index",
+      "sourceRoot": "libs/config-provider/src",
+      "compilerOptions": {
+        "tsConfigPath": "libs/config-provider/tsconfig.lib.json"
+      }
     }
   }
 }

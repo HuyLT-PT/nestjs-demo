@@ -23,6 +23,7 @@
     "@nestjs/common": "^10.0.0",
     "@nestjs/core": "^10.0.0",
     "@nestjs/platform-express": "^10.0.0",
+    "@nestjs/swagger": "^8.1.0",
     "reflect-metadata": "^0.2.0",
     "rxjs": "^7.8.1"
   },
@@ -66,7 +67,17 @@
     "coverageDirectory": "./coverage",
     "testEnvironment": "node",
     "roots": [
-      "<rootDir>/apps/"
-    ]
+      "<rootDir>/apps/",
+      "<rootDir>/libs/"
+    ],
+    "moduleNameMapper": {
+      "^@app/authen-provider(|/.*)$": "<rootDir>/libs/authen-provider/src/$1",
+      "^@app/cache-provider(|/.*)$": "<rootDir>/libs/cache-provider/src/$1",
+      "^@app/notification-provider(|/.*)$": "<rootDir>/libs/notification-provider/src/$1",
+      "^@app/sql-provider(|/.*)$": "<rootDir>/libs/sql-provider/src/$1",
+      "^@app/logging-provider(|/.*)$": "<rootDir>/libs/logging-provider/src/$1",
+      "^@app/common-provider(|/.*)$": "<rootDir>/libs/common-provider/src/$1",
+      "^@app/config-provider(|/.*)$": "<rootDir>/libs/config-provider/src/$1"
+    }
   }
 }

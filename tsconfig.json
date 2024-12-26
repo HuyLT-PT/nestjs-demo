@@ -17,6 +17,49 @@
     "strictBindCallApply": false,
     "forceConsistentCasingInFileNames": false,
     "noFallthroughCasesInSwitch": false,
-    "paths": {}
+    "paths": {
+      "@app/authen-provider": [
+        "libs/authen-provider/src"
+      ],
+      "@app/authen-provider/*": [
+        "libs/authen-provider/src/*"
+      ],
+      "@app/cache-provider": [
+        "libs/cache-provider/src"
+      ],
+      "@app/cache-provider/*": [
+        "libs/cache-provider/src/*"
+      ],
+      "@app/notification-provider": [
+        "libs/notification-provider/src"
+      ],
+      "@app/notification-provider/*": [
+        "libs/notification-provider/src/*"
+      ],
+      "@app/sql-provider": [
+        "libs/sql-provider/src"
+      ],
+      "@app/sql-provider/*": [
+        "libs/sql-provider/src/*"
+      ],
+      "@app/logging-provider": [
+        "libs/logging-provider/src"
+      ],
+      "@app/logging-provider/*": [
+        "libs/logging-provider/src/*"
+      ],
+      "@app/common-provider": [
+        "libs/common-provider/src"
+      ],
+      "@app/common-provider/*": [
+        "libs/common-provider/src/*"
+      ],
+      "@app/config-provider": [
+        "libs/config-provider/src"
+      ],
+      "@app/config-provider/*": [
+        "libs/config-provider/src/*"
+      ]
+    }
   }
 }
