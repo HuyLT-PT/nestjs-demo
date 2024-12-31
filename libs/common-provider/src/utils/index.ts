@@ -1,3 +1,5 @@
+import { PlainLiteralObject } from "@nestjs/common";
+
 export function hideImportantInformation(data: any, keys: string[]) {
   const result = JSON.parse(JSON.stringify(data));
   keys.forEach((key) => {
@@ -29,3 +31,12 @@ export function getRandomNumber(num: number): string {
   }
   return result;
 }
+
+export const assignDataPaging = <T>(params: PlainLiteralObject) => {
+  const page = Number(params?.page || params.pageIndex) || 1;
+  /**Maximum limit is 100 */
+  const limit = Math.min(Number(params?.limit || params.pageSize) || 10, 100);
+  const skip = (page - 1) * limit;
+
+  return { ...params, page, limit, skip } as T;
+};

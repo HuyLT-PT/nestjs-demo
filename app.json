@@ -1,0 +1,13 @@
+{
+    "apps": [
+      {
+        "name": "api-user",
+        "script": "./dist/apps/api-user/main.js",
+        "watch": false,
+        "instances": 1,
+        "exec_mode": "cluster",
+        "max_memory_restart": "1000M"
+      }     
+    ]
+  }
+  

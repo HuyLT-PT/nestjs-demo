@@ -59,6 +59,12 @@
       ],
       "@app/config-provider/*": [
         "libs/config-provider/src/*"
+      ],
+      "@app/rate-limit-provider": [
+        "libs/rate-limit-provider/src"
+      ],
+      "@app/rate-limit-provider/*": [
+        "libs/rate-limit-provider/src/*"
       ]
     }
   }
