@@ -7,9 +7,30 @@ import { TransformResponseInterceptor } from '@app/common-provider/interceptors/
 import { LoggerMiddleware } from '@app/common-provider/middlewares/logger.middlerware';
 import { WhileListIpMiddleware } from '@app/common-provider/middlewares/ip-whilelist.midderware';
 import { AllExceptionsFilter } from '@app/common-provider/filters/exceptions.filter';
+import { ClientsModule, Transport } from '@nestjs/microservices';
+import { Partitioners } from 'kafkajs';
 
 @Module({
-  imports: [],
+  imports: [
+    ClientsModule.register([
+      {
+        name: 'KAFKA_DEMO_1',
+        transport: Transport.KAFKA,
+        options: {
+          client: {
+            clientId: 'kafka-demo-1',
+            brokers: ['localhost:9092'],
+          },
+          consumer: {
+            groupId: 'kafka-demo-1-consumer',
+          },
+          producer: {
+            createPartitioner: Partitioners.LegacyPartitioner,
+          },
+        },
+      },
+    ]),
+  ],
   controllers: [AppController],
   providers: [
     AppService,

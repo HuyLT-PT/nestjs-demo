@@ -117,6 +117,24 @@
       "compilerOptions": {
         "tsConfigPath": "libs/rate-limit-provider/tsconfig.lib.json"
       }
+    },
+    "kafka-demo-1": {
+      "type": "application",
+      "root": "apps/kafka-demo-1",
+      "entryFile": "main",
+      "sourceRoot": "apps/kafka-demo-1/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/kafka-demo-1/tsconfig.app.json"
+      }
+    },
+    "kafka-demo-2": {
+      "type": "application",
+      "root": "apps/kafka-demo-2",
+      "entryFile": "main",
+      "sourceRoot": "apps/kafka-demo-2/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/kafka-demo-2/tsconfig.app.json"
+      }
     }
   }
 }
